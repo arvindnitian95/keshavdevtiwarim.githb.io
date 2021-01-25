@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<title>Studentinformation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="sc.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <!-- <style type="text/css">
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#container ul{
+  list-style: none;
+
+}   
+#container ul li{
+  background-color: blue;
+  width: 149px;
+  border: 1px solid white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+#container ul li:hover{
+  background-color: green;
+}
+#container ul ul {
+  display: none;
+}
+#container ul li:hover > ul{
+  display: block;
+}
+#container ul ul ul{
+  margin-left: 150px;
+  top: 0px;
+position: absolute;
+}
+</style>
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid #ccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: cyan;
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  cyan;
+}
+::placeholder{
+  color: black;
+  border: 5px;
+}
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+  max-width:180px;
+}
+input[type=file]{
+padding:10px;
+background:#2d2d2d;}
+
+</style>
+  </head>
+    <body style="background-color: gra; background-size: cover;">
+    	      <div id="container" style="margin-top: 0px;">
+              <ul>
+                <li><a href="index.html"> HOME</a></li>
+                <li><a href=""> About us</a>
+                          <ul>
+                            <li>Introduction</li>
+                            <li>The Founder</li>
+                            <li>Mission & Vission</li>
+                            <li>Charity Work</li>
+                            <li>Board of Trustees</li>
+                            <li>Management</li>
+                            <li>Awards & Accreditations</li>
+                            <li>Media/Press</li>
+                          </ul>
+                </li>
+                <li>Facilities
+                                <ul>
+                                  <li>Health CheckUp
+                                                    <ul>
+                                                      <li>Basic Package</li>
+                                                      <li>Cardiac Package</li>
+                                                      <li>Comprehensive</li>
+                                                      <li>Super Package</li>
+                                                      <li>Women Special</li>
+                                                    </ul> 
+                                  </li>
+                                  <li>Intensive Care
+                                                    <ul>
+                                                      <li>ICCU</li>
+                                                      <li>ICU</li>
+                                                      <li>Neonatal ICU</li>
+                                                      <li>Paediatric ICU</li>
+                                                    </ul>
+                                  </li>
+                                  <li>OT Comlexes</li>
+                                  <li>Wards
+                                             <ul>
+                                              <li>General Ward</li>
+                                              <li>Semi Private Ward</li>
+                                              <li>Private Ward</li>
+                                              <li>Deluxe Room</li>
+                                              <li>Super Delux</li>
+                                             </ul>
+                                  </li>
+                                  <li>Diadnostic Wing
+                                                    <ul>
+                                                      <li>Pathology</li>
+                                                        <li>Colposcopy</li> 
+                                                       <li>Radiology</li>
+                                                    </ul>
+                                  </li>
+                                  <li>EEG</li>
+                                  <li>Obesity & Pain clinic</li>
+                                  <li>Pharmacy</li>
+                                  <li>Ambulance</li>
+                                </ul>
+                </li>
+                <li>Pateint
+                               <ul>
+                                    <li>Accommodation</li>
+                                    <li>Empannelled Insurance</li>
+                                    <li>Find Doctor</li>
+                                    <li>Inpatients</li>
+                                    <li>Patient Edu. Broucher</li>
+                                    <li>Tarrif</li>
+                                    <li>Empanelled Corporates</li>
+                                    <li>Feedback</li>
+                                    <li>Floor Directory</li>
+                                    <li>Rights & Responsibility</li>
+                               </ul>
+                </li>
+                <li>Appointments
+                                 <ul>
+                                  <li><a href="BookAppointment.html">Book Appointment</a></li>
+                                  <li>Check ur Appoint</li>
+                                 </ul>
+                    </li>
+                <li>Academics
+                                <ul>
+                                   <li>Careers</li>
+                                   <li>CME</li>
+                                   <li>DNB</li>
+                                   <li>LHMT</li>
+                                   <li>MUHS Fellowship</li>
+                                   <li>Nurses</li>
+                                   <li>Research</li>
+                                </ul>
+                </li>
+                <li>Department
+                                <ul>
+                                  <li>Medicine
+                                        <ul>
+                                          <li>Internal Medicine</li>
+                                          <li>Endocrinology / Diabetes</li>
+                                          <li>Gastroenterology</li>
+                                          <li>Oncology</li>
+                                          <li>Nephrology</li>
+                                          <li>Psychiatry</li>
+                                          <li>Cardiology</li>
+                                          <li>Neurology</li>
+                                          <li>Dermatology</li>
+                                        </ul>
+                                  </li>
+                                  <li>Surgical
+                                          <ul>
+                                            <li>Plastic & Microvascular Surgery</li>
+                                            <li>General Surgery</li>
+                                            <li>Laparoscopic Surgery</li>
+                                            <li>Urosurgery</li>
+                                            <li>Onco Surgery</li>
+                                            <li>Dentistry</li>
+                                            <li>ENT</li>
+                                            <li>Ophthalmic</li>
+                                            <li>Orthopaedics</li>
+                                            <li>Pediatrics</li>
+                                            <li>Obstetrics & Gynecology</li>
+                                          </ul>
+                                  </li>
+                                </ul>
+                </li>
+                <li>Contact Us</li>
+                <li><a href="LogIn.html">LogIn</a></li>
+              </ul>
+             </div>
+  <!-- form Created -->
+
+
+<h3 style="text-align: center;color: #ff0000; font-size: 40px;">Student Information</h3>
+<div class="row">
+  <form action="studentpanel.html">
+<div class="column">
+              
+<h3>Graduation</h3>
+ <p style="height: 2px;background-color: black"></p>
+    <div class="column">
+     <br>
+       <label for="fname">Graduation</label><br><br><br>
+      <label for="fname">Board Name</label><br><br><br>
+      <label for="fname">Subjects</label><br><br><br>
+      <label for="fname">Graduation Percentage</label><br><br><br><br>
+      <label for="fname">Year</label>
+    </div>
+    <div class="column">
+            <select id="course" name="course">
+                <option value="australia">BA</option>
+                <option value="australia">MA</option>
+                <option value="canada">BSc</option>
+                <option value="usa">MSc</option>
+                <option value="canada">B.el.ed</option>
+                <option value="usa">D.el.ed</option>
+             </select>
+         <input type="text" id="board" name="board" value="" placeholder="Board Name">
+       <input type="text" id="schoolname" name="schoolname" value="" placeholder="School Name">
+       <input type="text" id="percentage" name="percentage" value="" placeholder="Percentage">
+       <input type="text" id="year" name="year" value="" placeholder="Year">
+    </div>
+    
+
+  
+</div>
+
+<div class="column">
+    
+ <h3>Choose Course</h3>
+<p style="height: 2px;background-color: black"></p>
+    <div class="column">
+       <br> <label for="fname">Course Name</label><br><br><br>
+       <label for="fname">Learning</label>
+    </div>
+    <div class="column">
+         <select id="course" name="course">
+                <option value="australia">BA</option>
+                <option value="australia">MA</option>
+                <option value="canada">BSc</option>
+                <option value="usa">MSc</option>
+                <option value="canada">B.el.ed</option>
+                <option value="usa">D.el.ed</option>
+             </select>
+             <select id="learning" name="learning">
+                <option value="australia">Private</option>
+                <option value="australia">Regular</option>
+             </select>
+    </div>
+
+    <h3>Image And Signature</h3>
+    <p style="height: 2px;background-color: black"></p>
+    <div class="column">
+            <label for="fname">Image</label>
+          <input type='file' onchange="readURL(this);" />
+          <img id="blah" src="http://placehold.it/180" alt="your image" />
+    </div>
+    <div class="column">
+          <label for="fname">Signature</label>
+          <input type='file' onchange="readURL(this);" />
+          <img id="blah" src="http://placehold.it/180" alt="your image" />
+    </div>
+
+
+</div> 
+   <h3 style="margin-left: 30px">Declaration By The Candidate</h3>
+<p style="height: 2px;background-color: black"></p>
+<p style="margin-left: 30px">I hereby declare that all the information given by me in this application is true and correct to the best of my knowledge and belief. I also note that if any of the above statements are found to be incorrect or false or any information or particulars have been suppressed or omitted there from, I am liable to be disqualified and my admission may be cancelled. I have read and understood the contents of the admission Announcement for the various Programmes. I hereby permit the institute to use, display or transfer any of the details furnished by me in this form for complying with the admission formalites</p>
+ <input type="radio" name="gender" value="male" style="margin-left: 30px"> I accept here<br>
+         
+<button style="width: 400px; margin-left: 33.33%;">Submit</button>
+
+</form>  
+
+
+
+</div>
+
+   </body>
+</html>

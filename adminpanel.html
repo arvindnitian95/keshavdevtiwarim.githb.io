@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<title>Admin Portal</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- style for Card -->
+  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  font-size:  18px;
+  padding: 12px;
+  border: 4px solid #ccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4d94ff;
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: white;
+
+}
+::placeholder{
+  color: red;
+}
+.container {
+  border-radius: 5px;
+  background-color: red;
+  padding: 20px;
+}
+.column {
+  margin-top: 20px;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>  
+<!-- code for cards -->
+<style type="text/css">
+  .card {
+    background-color:  grey;
+ /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); */
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: tomato;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+button:hover, a:hover {
+  opacity: 0.5;
+  color: cyan;
+}
+
+</style>
+
+ <style type="text/css">
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* nav bar */
+.h ul{
+	list-style: none;
+}
+.h ul li{
+	float: left;
+	background-color: blue;
+	width: 144px;
+	border: 0px solid white;
+	border-radius: 60px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+.h ul li:hover{
+background-color: cyan;
+}
+.h ul ul{
+	display: none;
+}
+.h ul li:hover  > ul{
+	display: block;
+}
+.h ul ul {
+	margin-left: 0px;
+	top: 48px;
+position: absolute;
+}
+.h ul ul li{
+	border: 1px solid black;
+	width: 150px;
+	background-color: white;
+        visibility: visible;
+        z-index: 100;
+}
+</style>
+-->
+  </head>
+    <body style="background-image: url(23.jpg); background-size: cover;">
+               <header>
+	<div style="width: 350px; color: black; margin-top:px;"> <h2  style="margin-left: 80px;margin-top: -20px;color: black"><strong style="font-size: 50px;" > KDTM</strong> <br> Gohan</h2></div>
+	<div style="width: 850px; float: right; margin-top:-50px"> 
+    
+     		<h6 style="color: black; margin-top: -30px;font-size: 20px;font-weight: bold;margin-left: -70px">Keshav Dev Tiwari Mahavidhyalay Gohan Jalaun U.P-285123</h6>
+     		<h6 style="margin-top: px; color: black;font-size: 20px;font-weight: bold;margin-left: -70px;margin-top: 0px">केशवदेव तिवारी महाविद्यालय गोहन जालौन,उत्तर प्रदेश-285123</h6>
+     		<div class="h">
+     		 	<ul style="margin-top: px; margin-left: -180px" class="overflow-auto">
+     		 		<li>Home</li>
+     		 		<li>Institute
+                        <ul>
+                           <li>About us</li>
+                           <li>Vision & Mission</li>
+                           <li>Administration</li>
+                           <li>Science</li>
+                            <li>Arts</li>
+                           <li>Document</li>
+                           <li>Photo Gallery</li>
+                        </ul>   
+     		 		</li>
+     		 		<li>Academic
+     		 			<ul>
+                         <li>Calender</li>
+                         <li>UG Programm</li>
+                         <li>PG Programm</li>
+                         <li>Document & manuals</li>
+                        </ul>
+     		 		</li>
+     		 		<li> Student
+     		 			<ul>
+                            <li>Admission</li>
+                            <li>Registration</li>
+                            <li>Fee Structure</li>
+                            <li>Topper's List</li>
+                            <li>Log In</li>
+                         </ul>   
+     		 		</li>
+     		 		<li> Facilities
+     		 			<ul>
+                         <li>Library</li>
+                         <li>Computer Lab</li>
+                         <li>Health Center</li>
+                         <li>Canteen</li>
+                        </ul> 
+     		 		</li>
+     		 		<li>Contact</li>
+     		 		<li>Login</li>
+     		 	</ul> 
+     		 </div>  
+	</div>
+	<div style="height: 2px; width: 105%; background-color: black; margin-left: -35px;margin-top: 20px"></div>
+	<!-- code for 1st nav bar -->
+                        <div class="onoffswitch3" style="width: 105%; height: 20px;margin-left: -30px; margin-top: -10px">
+                                 
+                                  <label class="onoffswitch3-label" for="myonoffswitch3">
+                                   <span class="onoffswitch3-inner">
+                                  <span class="onoffswitch3-active">
+                                  <marquee class="scroll-text" style="font-size: 20px;color: red; margin-top: 0px"> <span class="flash">Important:</span>   Infinity War's Iron Spider Suit May Use Bleeding Edge Tech  <span class="glyphicon glyphicon-forward" style="color: blue"></span> Russo brothers ask for fans not to spoil Important: Infinity War <span class="glyphicon glyphicon-forward" style="color: blue"></span>  Bucky's Arm Miraculously Regenerates On Important: Infinity War Poster</marquee>
+                                  <!-- <span class="onoffswitch3-switch"><span class="glyphicon glyphicon-remove"></span></span> -->
+                                 <!-- </span>
+                                   <span class="onoffswitch3-inactive"><span class="onoffswitch3-switch"></span></span>
+                                  </span>
+                                 </label> -->
+                        </div>
+</header>
+  <!-- form Created -->
+  <br>
+  <br>
+<h1 style="color: red; margin-left: -900px " >Welcome Admin</h1>
+
+  <div class="row">
+<div class="column">
+             <div class="card">
+                     <i class="fa fa-user-md" style="font-size:80px;color:red"></i>
+                      <br>
+                 <h1 style="color: black">Student</h1>
+                  
+                <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+               <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+                <table style="width: 100%; border-color: 3px solid black; ">
+                     <tr>
+                       <th><button>Add Student</button> </th>
+                       <th><button>Delete Student</button> </th>
+                     </tr>
+                   </table>
+               <p><button>View Student List</button></p>
+          </div>
+  
+</div>
+<div class="column">
+             <div class="card">
+                             <i class="fa fa-wheelchair" style="font-size:80px;color:red"></i>
+                            <br>
+                 <h1 style="color: black">Teacher's</h1>
+    
+    
+                <p style="color: black">Harvard University</p>
+                <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+               <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <table style="width: 100%; border-color: 3px solid black; ">
+                     <tr>
+                       <th><button>Add Teacher</button> </th>
+                       <th><button>Delete Teacher</button> </th>
+                     </tr>
+                   </table>
+               <p><button>View Teacher List</button></p>
+          </div>
+  
+</div>
+
+<div class="column">
+             <div class="card">
+                 <img src="Recep.jpg" alt="John" style="width:100%; height: 80px;">
+                 <h1 style="color: black">Staff</h1>
+    
+    
+                <p style="color: black">Harvard University</p>
+                <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+               <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <table style="width: 100%; border-color: 3px solid black; ">
+                     <tr>
+                       <th><button>Add Staff</button> </th>
+                       <th><button>Delete Staff</button> </th>
+                     </tr>
+                   </table>
+               <p><button>View Staff List</button></p>
+          </div>
+  
+</div>
+
+
+<div class="column">
+             <div class="card">
+                 <img src="nurse.jpg" alt="John" style="width:100%; height: 80px;">
+                 <h1 style="color: black">Fee Counter</h1>
+    
+    
+                <p style="color: black">Harvard University</p>
+                <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+               <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <table style="width: 100%; border-color: 3px solid black;">
+                     <tr>
+                       <th><button>Fee Submit</button> </th>
+                       <th><button>Fee Pending List</button> </th>
+                     </tr>
+                   </table>
+               <p><button>complete Fee Submit</button></p>
+          </div>
+  
+</div>
+
+<div class="column">
+        <div class="card">
+ <i class="fa fa-hospital-o" style="font-size:80px;color:red"></i>
+<br>
+     <h1 style="color: black">Salary</h1>
+    
+    
+  <p style="color: black">Harvard University</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <table style="width: 100%; border-color: 3px solid black; ">
+                     <tr>
+                       <th><button>Provide Salary</button> </th>
+                       <th><button>Pending salary</button> </th>
+                     </tr>
+                   </table>
+  <p><button>Salary Received</button></p>
+</div>
+
+</div>
+
+</div>
+
+   </body>
+</html>

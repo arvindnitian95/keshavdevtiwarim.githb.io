@@ -1,0 +1,117 @@
+/* News Slider Code */
+#slider,  #slider .slide{
+  width: 400px;
+  height: 360px;
+
+}
+#slider {
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 1.2em;
+  background: white;
+   border-bottom: 2px solid black;
+}
+#slider .container {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  animation: slide-animation 20s infinite;
+}
+#slider .slide {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+/* [ANIMATION] */
+@keyframes slide-animation {
+  0% { 
+    opacity: 0;
+    bottom: 0;
+  }
+  11% {
+    opacity: 1;
+    bottom: 0; 
+  }
+  22% { bottom: 100%; }
+  33% { bottom: 100%; }
+  44% { bottom: 200%; }
+  55% { bottom: 200%; }
+  66% { bottom: 300%; }
+  77% { bottom: 300%; }
+  88% {
+    opacity: 1;
+    bottom: 400%; 
+  }
+  100% {
+    opacity: 0;
+    bottom: 400%;
+  }
+}
+
+/* [DOES NOT MATTER] */
+html, body {
+  font-family: arial;
+  background: white;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* image slider code */
+.carousel{
+    background: #2f4357;
+    margin-top: 0px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    height: 410px;
+  }
+.bs-example{
+  margin: 0px;
+  width: 970px;
+  margin-left: -30px;
+}
+
+.row{
+width: 100%;
+}
+.columns{
+  width: 25%;
+  border-right: 2px solid red;
+  text-align: center;
+  height: 100px;
+}
+.columns:hover{
+  background-color: cyan;
+}
+.c{
+  width: 33.33%;
+}
+
+/*  text blinking */
+
+/*Be sure to look into browser prefixes for keyframes and annimations*/
+.flash {
+   animation-name: flash;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: blue;}
+
+}
+.s{
+  height: 2px;
+ background-color: gray;
+  width: 400px;
+}
+
+/*   code for index page */
